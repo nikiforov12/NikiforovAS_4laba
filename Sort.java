@@ -1,4 +1,3 @@
-//ссылка: https://github.com/Julia20011974/AaSD
 package internalSorting;
 
 import java.util.Scanner;
@@ -12,19 +11,19 @@ public class Sort {
 
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("Введите количество элементов массива:");
+		System.out.println("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў Г¬Г Г±Г±ГЁГўГ :");
 		int size = in.nextInt();
 
 		int[] Array = random(size);
-		System.out.println("Массив задан рандомно:");
+		System.out.println("ГЊГ Г±Г±ГЁГў Г§Г Г¤Г Г­ Г°Г Г­Г¤Г®Г¬Г­Г®:");
 		Sorts(Array);
 
 		System.out.println("----------------------------");
-		System.out.println("Массив по возврастанию:");
+		System.out.println("ГЊГ Г±Г±ГЁГў ГЇГ® ГўГ®Г§ГўГ°Г Г±ГІГ Г­ГЁГѕ:");
 		Sorts(Array);
 
 		System.out.println("----------------------------");
-		System.out.println("Массив по убыванию:");
+		System.out.println("ГЊГ Г±Г±ГЁГў ГЇГ® ГіГЎГ»ГўГ Г­ГЁГѕ:");
 		reverseArray(Array);
 
 		Sorts(Array);
@@ -32,31 +31,31 @@ public class Sort {
 	}
 
 	static void Sorts(int[] Array) {
-		System.out.println("Пузырьком:");
+		System.out.println("ГЏГіГ§Г»Г°ГјГЄГ®Г¬:");
 		bubbleSort(Array);
 		result();
 
 		System.out.println();
 
-		System.out.println("Вставка:");
+		System.out.println("Г‚Г±ГІГ ГўГЄГ :");
 		insertSort(Array);
 		result();
 
 		System.out.println();
 
-		System.out.println("Выбор:");
+		System.out.println("Г‚Г»ГЎГ®Г°:");
 		choiceSort(Array);
 		result();
 
 		System.out.println();
 
-		System.out.println("Естественное двухпутевое слияние:");
+		System.out.println("Г…Г±ГІГҐГ±ГІГўГҐГ­Г­Г®ГҐ Г¤ГўГіГµГЇГіГІГҐГўГ®ГҐ Г±Г«ГЁГїГ­ГЁГҐ:");
 		mergeSort(Array, Array.length);
 		result();
 
 		System.out.println();
 
-		System.out.println("Быстрая сортировка:");
+		System.out.println("ГЃГ»Г±ГІГ°Г Гї Г±Г®Г°ГІГЁГ°Г®ГўГЄГ :");
 		quickSort(Array);
 		result();
 
@@ -72,9 +71,9 @@ public class Sort {
 	}
 
 	static private void result() {
-		System.out.println("Время в миллисекундах: " + time);
-		System.out.println("Количество сравнений: " + compare);
-		System.out.println("Количество обменов: " + swap);
+		System.out.println("Г‚Г°ГҐГ¬Гї Гў Г¬ГЁГ«Г«ГЁГ±ГҐГЄГіГ­Г¤Г Гµ: " + time);
+		System.out.println("ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±Г°Г ГўГ­ГҐГ­ГЁГ©: " + compare);
+		System.out.println("ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г®ГЎГ¬ГҐГ­Г®Гў: " + swap);
 	}
 
 	static int[] random(int size) {
